@@ -15,7 +15,7 @@ class Config(object):
     #MAIL_USERNAME = 'mei9fei@gmail.com'
     MAIL_DEFAULT_SENDER = 'mei0fei@qq.com'
     #MAIL_DEFAULT_SENDER = 'mei9fei@gmail.com'
-    MAIL_PASSWORD = 'tttliyfazpftbddi'
+    MAIL_PASSWORD = 'xxxx'
     MAIL_USE_TLS = 0
 
     ADMINS = ['mei0fei@qq.com']
