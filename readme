@@ -1,0 +1,55 @@
+使用flask设计一个web项目
+
+每个python package中有一个文件__init__.py， 这个文件中定义了该包对外开放的变量。
+定义启动py文件， export FLASK_APP=microblog.py
+设定调试模式， export FLASK_DEBUG=1
+运行flask run
+http://127.0.0.1:5000/
+
+//py模版
+02 templates
+from flask import render_template
+render_template('index.html', title='Home', user=user, posts=posts)
+
+//web form
+03 webform
+flask-wtf
+
+//支持关系型数据库
+04 Flask-SQLAlchemy
+pip install flask-sqlalchemy
+pip install flask-migrate
+
+//WWW SQL Designer
+flask db init
+
+flask db migrate -m "posts table"
+
+flask db upgrade
+
+flask shell
+
+@app.shell_context_processor
+
+
+//通过邮件， 修改密码
+pip install flask-mail
+
+pip install pyjwt
+
+//支持css框架
+pip install flask-bootstrap
+
+//依据时区， 把utc时间转换为本地时间
+pip install flask-moment
+
+//支持多国语言
+pip install flask-babel
+
+pybabel extract -F babel.cfg -k _l -o messages.pot .
+
+pybabel init -i messages.pot -d app/translations -l en
+
+pybabel update -i messages.pot -d app/translations
+
+pybabel compile -d app/translations

@@ -1,0 +1,232 @@
+# English translations for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-08-10 11:20+0800\n"
+"PO-Revision-Date: 2018-08-10 09:48+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: app/__init__.py:41
+msgid "微博失败"
+msgstr "MicroBlog Failed"
+
+#: app/__init__.py:56
+msgid "启动微博"
+msgstr "Start MicroBlog"
+
+#: app/email.py:22
+msgid "[微博] 重置你的密码"
+msgstr "[MicroBlog] Reset your password"
+
+#: app/forms.py:10 app/forms.py:16 app/forms.py:34
+msgid "用户名称"
+msgstr "Username"
+
+#: app/forms.py:11 app/forms.py:18 app/forms.py:58
+msgid "密码"
+msgstr "Password"
+
+#: app/forms.py:12
+msgid "记住我"
+msgstr "Remember Me"
+
+#: app/forms.py:13 app/routes.py:60 app/templates/base.html:12
+#: app/templates/login.html:4
+msgid "登录"
+msgstr "Sign In"
+
+#: app/forms.py:17 app/forms.py:54
+msgid "邮箱"
+msgstr "Email"
+
+#: app/forms.py:20
+msgid "重复密码"
+msgstr "Repeat Password"
+
+#: app/forms.py:21 app/routes.py:79 app/templates/login.html:24
+#: app/templates/register.html:5
+msgid "注册"
+msgstr "Register"
+
+#: app/forms.py:26
+msgid "该用户名称已经注册过！"
+msgstr "Please use a different username."
+
+#: app/forms.py:31
+msgid "该邮箱已经注册过."
+msgstr "Please use a different email address."
+
+#: app/forms.py:35
+msgid "关于我"
+msgstr "About me"
+
+#: app/forms.py:36 app/forms.py:51
+msgid "提交"
+msgstr "Submit"
+
+#: app/forms.py:46
+msgid "名称已经存在。"
+msgstr "Please use a different username."
+
+#: app/forms.py:49
+msgid "发帖"
+msgstr "Post"
+
+#: app/forms.py:55 app/forms.py:61 app/routes.py:168
+#: app/templates/login.html:27 app/templates/reset_password_request.html:4
+msgid "重置密码"
+msgstr "Reset password"
+
+#: app/forms.py:60
+msgid "再次确认密码"
+msgstr "Repeat password"
+
+#: app/models.py:53
+msgid "<用户 %(self.username)>"
+msgstr "<User %(self.username)>"
+
+#: app/models.py:88
+msgid "<帖子 %(self.body)>"
+msgstr "<Post %(self.body)>"
+
+#: app/routes.py:28
+msgid "帖子更新了!"
+msgstr "our post is now live!"
+
+#: app/routes.py:39 app/templates/base.html:10
+msgid "首页"
+msgstr "Main"
+
+#: app/routes.py:53
+msgid "用户名称或密码不正确"
+msgstr "Invalid username or password"
+
+#: app/routes.py:77
+msgid "恭喜, 你注册成功!"
+msgstr "Congratulations, you are now a registered user!"
+
+#: app/routes.py:104
+msgid "保存了修改"
+msgstr "Your changes have been saved."
+
+#: app/routes.py:109 app/templates/edit_profile.html:4
+#: app/templates/user.html:12
+msgid "编辑简历"
+msgstr "Edit profile"
+
+#: app/routes.py:117 app/routes.py:132
+msgid "用户 %(username) 不存在。"
+msgstr "User %(username)s not found."
+
+#: app/routes.py:120
+msgid "不可以跟随自己!"
+msgstr "You cannot follow yourself!"
+
+#: app/routes.py:124
+msgid "你正在跟随 %(username)!"
+msgstr "You are following %(username)s"
+
+#: app/routes.py:135
+msgid "你不可以解除跟随自己!"
+msgstr "You cannot unfollow yourself!"
+
+#: app/routes.py:139
+msgid "你不再跟随 %(username)."
+msgstr "You are not following %(username)s."
+
+#: app/routes.py:152
+msgid "浏览"
+msgstr "Explore"
+
+#: app/routes.py:165
+msgid "请进入到你的邮箱中， 重新设置密码"
+msgstr "Check your email for the instructions to reset your password"
+
+#: app/routes.py:181
+msgid "你的密码已经重置了."
+msgstr "Reset Your Password"
+
+#: app/templates/404.html:4
+msgid "文件没有找到"
+msgstr "Not found"
+
+#: app/templates/404.html:5 app/templates/500.html:6
+msgid "返回"
+msgstr "Back"
+
+#: app/templates/500.html:4
+msgid "发生错我"
+msgstr "An unexpected error has occurred"
+
+#: app/templates/500.html:5
+msgid "已经通知管理员了!"
+msgstr "The administrator has been notified."
+
+#: app/templates/_post.html:10
+#, python-format
+msgid "%(username)s 说 %(when)s"
+msgstr "%(username)s say %(when)s"
+
+#: app/templates/base.html:14
+msgid "浏览帖子"
+msgstr "Explore posts"
+
+#: app/templates/base.html:15
+msgid "简历"
+msgstr "Profile"
+
+#: app/templates/base.html:16
+msgid "登出"
+msgstr "Logout"
+
+#: app/templates/index.html:4
+msgid "你好"
+msgstr "Welcome"
+
+#: app/templates/index.html:22 app/templates/user.html:26
+msgid "下一页"
+msgstr "Next"
+
+#: app/templates/index.html:25 app/templates/user.html:29
+msgid "上一页"
+msgstr "Previous"
+
+#: app/templates/login.html:24
+msgid "新用户"
+msgstr "New user"
+
+#: app/templates/login.html:26
+msgid "忘记密码了?"
+msgstr "Forget password?"
+
+#: app/templates/user.html:8
+msgid "用户"
+msgstr "User"
+
+#: app/templates/user.html:10
+msgid "上次看到:"
+msgstr "Last seen on"
+
+#: app/templates/user.html:14
+msgid "跟随"
+msgstr "Follow"
+
+#: app/templates/user.html:16
+msgid "解除跟随"
+msgstr "Unfollow"
+
+#~ msgid "<帖子 {}>"
+#~ msgstr "<Post {}>"
+

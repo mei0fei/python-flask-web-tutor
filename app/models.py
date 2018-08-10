@@ -7,6 +7,8 @@ from hashlib import md5
 from time import time
 import jwt
 from app import app
+from flask_babel import lazy_gettext as _l
+from flask_babel import _
 
 
 followers = db.Table('followers',
@@ -48,7 +50,7 @@ class User(UserMixin,  db.Model):
             Post.timestamp.desc())
 
     def __repr__(self):
-        return '<用户 {}>'.format(self.username)
+        return _('<用户 %(self.username)>').format(self.username)
 
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
@@ -83,7 +85,7 @@ class Post(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
     def __repr__(self):
-        return '<帖子 {}>'.format(self.body)
+        return _('<帖子 %(self.body)>').format(self.body)
 
 @login.user_loader
 def load_user(id):

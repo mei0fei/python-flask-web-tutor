@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
-{% block content %}
-    <h1>你好, {{ current_user.username }}!</h1>
+{% block app_content %}
+    <h1>{{_('你好')}}, {{ current_user.username }}!</h1>
     {% if form %}
     <form action="" method="post">
         {{ form.hidden_tag() }}
@@ -19,9 +19,9 @@
     {% include '_post.html' %}
     {% endfor %}
     {% if prev_url %}
-    <a href="{{ prev_url }}">下一页</a>
+    <a href="{{ prev_url }}">{{ _('下一页') }}</a>
     {% endif %}
     {% if next_url %}
-    <a href="{{ next_url }}">上一页</a>
+    <a href="{{ next_url }}">{{ _('上一页') }}</a>
     {% endif %}
 {% endblock %}
